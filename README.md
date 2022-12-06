@@ -20,17 +20,7 @@ while True:
     mask = cv2.inRange(hsv,l_g,u_g)
     res=cv2.bitwise_and(frame,frame,mask=mask)
     f=frame-res
-    green_screen=np.where(f==0, image, f)
     
-
-    cv2.imshow("final",green_screen)  
-
-    k=cv2.waitKey(1)
-    if k == ord('q'):
-        break 
-
-video.release()
-cv2.destroyAllWindows() 
 
  
 
