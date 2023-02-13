@@ -1,4 +1,4 @@
-# pyhton-and-open-cv
+# Python-and-open-cv
 
     
 
